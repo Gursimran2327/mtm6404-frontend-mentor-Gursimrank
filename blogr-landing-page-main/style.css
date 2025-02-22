@@ -1,0 +1,213 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body */
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar Styling */
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between; /* Ensure space between logo, links, and buttons */
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #ff7b86;
+}
+
+/* Logo */
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Auth Buttons */
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.login-btn, .signup-btn {
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.signup-btn {
+    background-color: white;
+    color: #ff5574;
+    border-radius: 5px;
+}
+button:hover, .btn:hover {
+    background-color: #463fa9; /* Change color when hovered */
+    opacity: 0.8;  /* Slight transparency */
+    transition: 0.3s ease-in-out; /* Smooth effect */
+}
+
+/* Fix for Normal Screens (Ensure horizontal alignment) */
+@media (max-width: 768px) {
+    .navbar-collapse {
+        background-color: #f4ebfb; /* Ensure it’s visible */
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .navbar-nav {
+        flex-direction: column; /* Stack links vertically */
+    }
+
+    .auth-buttons {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .auth-buttons button {
+        width: 100%;
+    }
+}
+
+
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(to right, #463fa9, #f47a91);
+    color: white;
+}
+
+.hero h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.hero button {
+    padding: 10px 20px;
+    border: none;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.hero button:first-of-type {
+    background-color: white;
+    color: #ff5574;
+    border-radius: 5px;
+}
+
+.hero button:last-of-type {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Features Section */
+.features {
+    padding: 50px 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.features h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    font-style:unset  ;
+}
+
+.features article {
+    margin-bottom: 20px;
+}
+
+.features h3 {
+    font-size: 1.5rem;
+    color: #ff5574;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.attribution {
+    font-size: 11px;
+    margin-top: 10px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero {
+        padding: 30px 15px;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .features h2 {
+        font-size: 1.8rem;
+    }
+
+    .features h3 {
+        font-size: 1.3rem;
+    }
+}
